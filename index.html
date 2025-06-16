@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D CSS Model Editor</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="toolbar">
+    <button id="add-cube">Add Cube</button>
+    <button id="add-triangle">Add Triangle</button>
+    <button id="save-scene">Save</button>
+  </div>
+  <div id="editor">
+    <div id="viewport">
+      <div id="camera"></div>
+    </div>
+    <div id="properties">
+      <h3>Properties</h3>
+      <div id="camera-controls">
+        <h4>Camera</h4>
+        <label>rotX<input id="cam-rotX" type="number" value="0"></label>
+        <label>rotY<input id="cam-rotY" type="number" value="0"></label>
+        <label>rotZ<input id="cam-rotZ" type="number" value="0"></label>
+      </div>
+      <div id="props-content">
+        <p>Select an object to see properties</p>
+      </div>
+    </div>
+  </div>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
